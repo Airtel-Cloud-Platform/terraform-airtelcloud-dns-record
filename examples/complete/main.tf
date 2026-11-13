@@ -12,3 +12,7 @@ module "dns_record" {
   ttl         = 3600
   description = "Primary mail server"
 }
+
+output "dns_record" {
+  value = module.dns_record.dns_record
+}
