@@ -9,3 +9,7 @@ module "dns_record" {
 
   data = "192.168.1.10"
 }
+
+output "record_id" {
+  value = module.dns_record.record_id
+}
